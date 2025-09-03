@@ -1,0 +1,109 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(150deg, #1a7fd6, #2ce8f2);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form Box */
+.form-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Input Fields */
+.input-box {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+}
+
+.input-box label {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  color: #ddd;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* Floating label on focus */
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -10px;
+  font-size: 13px;
+  color: #00f2fe;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #00f2fe;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #f0fafb;
+  color: rgb(11, 216, 247);
+  transform: scale(1.05);
+}
+
+/* Switch text */
+.switch {
+  margin-top: 15px;
+  color: #eee;
+  font-size: 14px;
+}
+
+.switch a {
+  color: #048ff9;
+  text-decoration: none;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
